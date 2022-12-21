@@ -1,1 +1,0 @@
-# PolynomDeg3SolverDoxygen
