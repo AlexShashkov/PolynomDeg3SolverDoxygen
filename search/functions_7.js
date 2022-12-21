@@ -1,0 +1,4 @@
+var searchData=
+[
+  ['number_5fof_5froots_0',['number_of_roots',['../_8excerpt_8cpp.html#a3bed80ec315027df46fee0dee310fa64',1,'number_of_roots(unsigned P, fp_t a, fp_t b, fp_t c, fp_t d, fp_t e):&#160;.excerpt.cpp'],['../_8excerpt_8h.html#a3bed80ec315027df46fee0dee310fa64',1,'number_of_roots(unsigned P, fp_t a, fp_t b, fp_t c, fp_t d, fp_t e):&#160;.excerpt.cpp'],['../framework_8cpp.html#a3bed80ec315027df46fee0dee310fa64',1,'number_of_roots(unsigned P, fp_t a, fp_t b, fp_t c, fp_t d, fp_t e):&#160;framework.cpp'],['../framework__launch__one_8cpp.html#a3bed80ec315027df46fee0dee310fa64',1,'number_of_roots(unsigned P, fp_t a, fp_t b, fp_t c, fp_t d, fp_t e):&#160;framework_launch_one.cpp'],['../framework__show__all__ae__worst_8cpp.html#a3bed80ec315027df46fee0dee310fa64',1,'number_of_roots(unsigned P, fp_t a, fp_t b, fp_t c, fp_t d, fp_t e):&#160;framework_show_all_ae_worst.cpp']]]
+];
