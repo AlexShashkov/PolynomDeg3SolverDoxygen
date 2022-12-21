@@ -1,0 +1,9 @@
+var searchData=
+[
+  ['fma_0',['fma',['../namespaceimplementations.html#a2f199287102543bbb9e07d899f5a8f93',1,'implementations::fma(complex&lt; number &gt; a, complex&lt; number &gt; b, complex&lt; number &gt; c)'],['../namespaceimplementations.html#ab3de2871e176242b4b306ff27f40dc01',1,'implementations::fma(std::complex&lt; number &gt; a, std::complex&lt; number &gt; b, number c)'],['../namespaceimplementations.html#afce57b115065f54d486fed7dc099dbd7',1,'implementations::fma(complex&lt; number &gt; a, number b, complex&lt; number &gt; c)'],['../namespaceimplementations.html#ae006d4dc2a72af0b7c1f3cd9c043eacf',1,'implementations::fma(number a, number b, complex&lt; number &gt; c)'],['../namespaceimplementations.html#a5825206984288a62133abbea0a4d075b',1,'implementations::fma(complex&lt; number &gt; a, number b, number c)']]],
+  ['fms_1',['fms',['../namespaceimplementations.html#acc38276d9ce55c3c398b758fe6343a5b',1,'implementations::fms(number a, number b, number c, number d)'],['../namespaceimplementations.html#ae3cdd767b52bc440ccb17ec325cad4b7',1,'implementations::fms(std::complex&lt; number &gt; a, std::complex&lt; number &gt; b, std::complex&lt; number &gt; c, std::complex&lt; number &gt; d)']]],
+  ['fp_5ft_2',['fp_t',['../framework_8cpp.html#aa902f71068000d0c8a449064e2963cc6',1,'fp_t():&#160;framework.cpp'],['../framework__launch__one_8cpp.html#aa902f71068000d0c8a449064e2963cc6',1,'fp_t():&#160;framework_launch_one.cpp'],['../framework__show__all__ae__worst_8cpp.html#aa902f71068000d0c8a449064e2963cc6',1,'fp_t():&#160;framework_show_all_ae_worst.cpp']]],
+  ['framework_2ecpp_3',['framework.cpp',['../framework_8cpp.html',1,'']]],
+  ['framework_5flaunch_5fone_2ecpp_4',['framework_launch_one.cpp',['../framework__launch__one_8cpp.html',1,'']]],
+  ['framework_5fshow_5fall_5fae_5fworst_2ecpp_5',['framework_show_all_ae_worst.cpp',['../framework__show__all__ae__worst_8cpp.html',1,'']]]
+];

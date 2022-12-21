@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Решение полиномов третьей степени c помощью Виеты и Baydoun: Исходный файл .excerpt.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Решение полиномов третьей степени c помощью Виеты и Baydoun
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_8excerpt_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">.excerpt.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_8excerpt_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef POLYROOTS1234_HPP</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define POLYROOTS1234_HPP</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno"><a class="line" href="_8excerpt_8h.html#a5f4cbd78494381cc175173f29b3e2113">    3</a></span><span class="preprocessor">#define PR_NUMBERS_OF_ROOTS_EQUAL     0</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="_8excerpt_8h.html#a818d3367ab5885a84740baa364d3d254">    4</a></span><span class="preprocessor">#define PR_AT_LEAST_ONE_ROOT_LOST    -1</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="_8excerpt_8h.html#a27070c966da6575f0e6a6bd455723386">    5</a></span><span class="preprocessor">#define PR_AT_LEAST_ONE_ROOT_IS_FAKE -2</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="_8excerpt_8h.html#a7b35c45dbd660a696c9ae9076041f193">    6</a></span><span class="preprocessor">#define PR_2_INFINITE_ROOTS          -3</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#define PR_DISCRIMINANT_USE_TRADITIONAL_OPERATIONS_NORMALIZED 0</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="_8excerpt_8h.html#aab1b826ee91e61ba8a4191c3ca1db675">    9</a></span><span class="preprocessor">#define PR_DISCRIMINANT_USE_TRADITIONAL_OPERATIONS_NORMALIZED 0</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="_8excerpt_8h.html#ac5cccb6239543f5345628a05b392cdbb">   10</a></span><span class="preprocessor">#define PR_DISCRIMINANT_USE_FMA_UNNORMALIZED 0</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="_8excerpt_8h.html#a1343bd1f2f66c91815fc929d7623e78b">   11</a></span><span class="preprocessor">#define PR_DISCRIMINANT_USE_FMA_NORMALIZED 0</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">//#include &lt;array&gt;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;cmath&gt;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;numbers&gt;</span> <span class="comment">// std::numbers::pi_v&lt;fp_t&gt;, requires -std=c++20</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;chrono&gt;</span> <span class="comment">// for testing only</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;random&gt;</span> <span class="comment">// for testing only</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;cstdlib&gt;</span> <span class="comment">// for testing only</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &lt;cassert&gt;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &lt;iomanip&gt;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &lt;complex&gt;</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">// checks attainable number of real roots in a polynomial: a*x^4 + b*x^3 + c*x^2 + d*x + e; multiple root is treated as separate roots</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> fp_t&gt;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keywordtype">int</span> <a class="code hl_function" href="_8excerpt_8h.html#a3bed80ec315027df46fee0dee310fa64">number_of_roots</a>(<span class="keywordtype">unsigned</span> P, <span class="comment">// polynomial degree</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>                    <a class="code hl_typedef" href="framework_8cpp.html#aa902f71068000d0c8a449064e2963cc6">fp_t</a> a, <a class="code hl_typedef" href="framework_8cpp.html#aa902f71068000d0c8a449064e2963cc6">fp_t</a> b, <a class="code hl_typedef" href="framework_8cpp.html#aa902f71068000d0c8a449064e2963cc6">fp_t</a> c, <a class="code hl_typedef" href="framework_8cpp.html#aa902f71068000d0c8a449064e2963cc6">fp_t</a> d, <a class="code hl_typedef" href="framework_8cpp.html#aa902f71068000d0c8a449064e2963cc6">fp_t</a> e); <span class="comment">// polynomial coefficients</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">// Compares two vectors of roots; root orderings play no role. For each entry in (roots_ground_truth),</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">// the closest entry in (roots_to_check) is found and corresponding distance found. Among such distances</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">// the largest will be stored to (max_deviation)</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> fp_t&gt;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keywordtype">int</span> <a class="code hl_function" href="_8excerpt_8h.html#a6b0b280073acffdeb820ca7ab108b163">compare_roots</a>(</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <span class="keywordtype">unsigned</span> N_roots_to_check, <span class="comment">// number of roots in (roots_to_check)</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <span class="keywordtype">unsigned</span> N_roots_ground_truth,  <span class="comment">// number of roots in (roots_ground_truth)</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        std::vector&lt;fp_t&gt; &amp;roots_to_check, <span class="comment">// one should take into account only first (N_roots_to_check) roots here</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        std::vector&lt;fp_t&gt; &amp;roots_ground_truth, <span class="comment">// one should take into account only first (N_roots_ground_truth) roots here</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <a class="code hl_typedef" href="framework_8cpp.html#aa902f71068000d0c8a449064e2963cc6">fp_t</a> &amp;max_absolute_error, <span class="comment">// here the greatest among the smallest deviations of the roots in (roots_to_check) and (roots_ground_truth)</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="comment">// will be placed</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <span class="comment">// here the greatest relative error among all the roots found will be placed</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <a class="code hl_typedef" href="framework_8cpp.html#aa902f71068000d0c8a449064e2963cc6">fp_t</a> &amp;max_relative_error);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">// Creates a test polynomial, both in the form of roots, e.g. (x-roots[0])*(x-roots[1])*(quadratic polynomial with no real roots) and</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">// represented by coefficients, e.g. (coefficients[4]=1)*x^4 + coefficients[3]*x^3 + coefficients[2]*x^2 + coefficients[1]*x + coefficients[0].</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">// The highest-degree coefficient always equals 1. The function returns the actual number of different real roots placed into the vector</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">// (roots) (complex roots are not placed there). Negative return values may mean internal implementation error</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> fp_t&gt;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="keywordtype">int</span> <a class="code hl_function" href="_8excerpt_8h.html#a5499085fd2fb9ee469b10b0488c87900">generate_polynomial</a>(</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <span class="keywordtype">unsigned</span> P, <span class="comment">// polynomial degree</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <span class="keywordtype">unsigned</span> N_pairs_of_complex_roots, <span class="comment">// how many pairs of complex conjugate roots to introduce</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <span class="keywordtype">unsigned</span> N_clustered_roots, <span class="comment">// how many clustered roots to introduce; all the clustered roots are real</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <span class="keywordtype">unsigned</span> N_multiple_roots, <span class="comment">// how many multiple roots to introduce; all multiple roots are real</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <a class="code hl_typedef" href="framework_8cpp.html#aa902f71068000d0c8a449064e2963cc6">fp_t</a> max_distance_between_clustered_roots, <span class="comment">// maximal distance between the closest of the clustered roots</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        <a class="code hl_typedef" href="framework_8cpp.html#aa902f71068000d0c8a449064e2963cc6">fp_t</a> root_sweep_low,</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <a class="code hl_typedef" href="framework_8cpp.html#aa902f71068000d0c8a449064e2963cc6">fp_t</a> root_sweep_high, <span class="comment">// low and high boundaries of real roots; imaginary parts of complex conjugate roots are in the same range</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        std::vector&lt;fp_t&gt; &amp;roots, <span class="comment">// storage where to put the roots; size should exceed P-1</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        std::vector&lt;fp_t&gt; &amp;coefficients);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> fp_t&gt;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="keywordtype">int</span> <a class="code hl_function" href="_8excerpt_8h.html#a5f963a265a3d18fbe8a6e9acdb6002bf">compare_roots_complex</a>(<span class="keywordtype">unsigned</span> N_roots_to_check, <span class="comment">// number of roots in roots_to_check</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                          <span class="keywordtype">unsigned</span> N_roots_ground_truth,  <span class="comment">// number of roots in roots_ground_truth</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                          std::vector&lt;std::complex&lt;fp_t&gt;&gt; &amp;roots_to_check, <span class="comment">// one should take into account only first (N_roots_to_check) rots</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                          std::vector&lt;fp_t&gt; &amp;roots_ground_truth, <span class="comment">// one should take into account only first (N_roots_ground_truth) rots</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                          <a class="code hl_typedef" href="framework_8cpp.html#aa902f71068000d0c8a449064e2963cc6">fp_t</a> &amp;max_absolute_error, <span class="comment">// here the greatest among the smallest deviations of the roots in (roots_to_check) and (roots_ground_truth)</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        <span class="comment">// will be placed</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        <span class="comment">// here the greatest relative error among all the roots found will be placed</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                          <a class="code hl_typedef" href="framework_8cpp.html#aa902f71068000d0c8a449064e2963cc6">fp_t</a> &amp;max_relative_error);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="preprocessor">#endif </span><span class="comment">//POLYROOTS1234_HPP</span></div>
+<div class="ttc" id="a_8excerpt_8h_html_a3bed80ec315027df46fee0dee310fa64"><div class="ttname"><a href="_8excerpt_8h.html#a3bed80ec315027df46fee0dee310fa64">number_of_roots</a></div><div class="ttdeci">int number_of_roots(unsigned P, fp_t a, fp_t b, fp_t c, fp_t d, fp_t e)</div><div class="ttdef"><b>Definition:</b> .excerpt.cpp:319</div></div>
+<div class="ttc" id="a_8excerpt_8h_html_a5499085fd2fb9ee469b10b0488c87900"><div class="ttname"><a href="_8excerpt_8h.html#a5499085fd2fb9ee469b10b0488c87900">generate_polynomial</a></div><div class="ttdeci">int generate_polynomial(unsigned P, unsigned N_pairs_of_complex_roots, unsigned N_clustered_roots, unsigned N_multiple_roots, fp_t max_distance_between_clustered_roots, fp_t root_sweep_low, fp_t root_sweep_high, std::vector&lt; fp_t &gt; &amp;roots, std::vector&lt; fp_t &gt; &amp;coefficients)</div><div class="ttdef"><b>Definition:</b> .excerpt.cpp:25</div></div>
+<div class="ttc" id="a_8excerpt_8h_html_a5f963a265a3d18fbe8a6e9acdb6002bf"><div class="ttname"><a href="_8excerpt_8h.html#a5f963a265a3d18fbe8a6e9acdb6002bf">compare_roots_complex</a></div><div class="ttdeci">int compare_roots_complex(unsigned N_roots_to_check, unsigned N_roots_ground_truth, std::vector&lt; std::complex&lt; fp_t &gt; &gt; &amp;roots_to_check, std::vector&lt; fp_t &gt; &amp;roots_ground_truth, fp_t &amp;max_absolute_error, fp_t &amp;max_relative_error)</div><div class="ttdef"><b>Definition:</b> .excerpt.cpp:349</div></div>
+<div class="ttc" id="a_8excerpt_8h_html_a6b0b280073acffdeb820ca7ab108b163"><div class="ttname"><a href="_8excerpt_8h.html#a6b0b280073acffdeb820ca7ab108b163">compare_roots</a></div><div class="ttdeci">int compare_roots(unsigned N_roots_to_check, unsigned N_roots_ground_truth, std::vector&lt; fp_t &gt; &amp;roots_to_check, std::vector&lt; fp_t &gt; &amp;roots_ground_truth, fp_t &amp;max_absolute_error, fp_t &amp;max_relative_error)</div><div class="ttdef"><b>Definition:</b> .excerpt.cpp:278</div></div>
+<div class="ttc" id="aframework_8cpp_html_aa902f71068000d0c8a449064e2963cc6"><div class="ttname"><a href="framework_8cpp.html#aa902f71068000d0c8a449064e2963cc6">fp_t</a></div><div class="ttdeci">float fp_t</div><div class="ttdef"><b>Definition:</b> framework.cpp:275</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="_8excerpt_8h.html">.excerpt.h</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
+</body>
+</html>
