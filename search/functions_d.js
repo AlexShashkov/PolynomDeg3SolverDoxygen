@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['vieta_0',['Vieta',['../classimplementations_1_1Vieta.html#a2abb5b15accc03cc8b6696e89dafe57a',1,'implementations::Vieta']]]
+  ['usual_0',['Usual',['../classimplementations_1_1Vieta.html#a6596be14b82df798033ef948b054de1b',1,'implementations::Vieta']]]
 ];

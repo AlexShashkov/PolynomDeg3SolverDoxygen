@@ -1,11 +1,11 @@
 var indexSectionsWithContent =
 {
-  0: "._abcdfgimnoprstuvр",
+  0: ".abcdfgikmnoprstuvр",
   1: "bv",
   2: "i",
   3: ".fmr",
-  4: "abcdfgmnopstuv",
-  5: "_cnops",
+  4: "abcdfgkmnopstuv",
+  5: "cnops",
   6: "f",
   7: "mnp",
   8: "р"

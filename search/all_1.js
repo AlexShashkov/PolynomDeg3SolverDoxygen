@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['_5fpi_0',['_PI',['../namespaceimplementations.html#a12ae120e5117f4f40de49a374f027d0f',1,'implementations']]]
+  ['anynotfinite_0',['anynotfinite',['../namespaceimplementations.html#ab09d5e3ebd87adc7e9e94a3b42275353',1,'implementations']]],
+  ['argp_1',['argp',['../classimplementations_1_1Baydoun.html#a7c9164811a341c7e617630f53fe7eefe',1,'implementations::Baydoun']]]
 ];

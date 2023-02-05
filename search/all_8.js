@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['implementations_0',['implementations',['../namespaceimplementations.html',1,'']]]
+  ['kahanquadratic_0',['KahanQuadratic',['../namespaceimplementations.html#a5875f09843987fe7ce47a4f70c5973e3',1,'implementations']]]
 ];

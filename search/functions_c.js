@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['usual_0',['Usual',['../classimplementations_1_1Vieta.html#a6596be14b82df798033ef948b054de1b',1,'implementations::Vieta']]]
+  ['test_5fmethod_0',['test_method',['../_8ready__tests_8cpp.html#a7a9356df9aedbdacd51356c64f32c8b9',1,'.ready_tests.cpp']]]
 ];

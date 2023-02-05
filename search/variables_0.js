@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['_5fpi_0',['_PI',['../namespaceimplementations.html#a12ae120e5117f4f40de49a374f027d0f',1,'implementations']]]
+  ['cbrt4ftwo_0',['cbrt4ftwo',['../classimplementations_1_1Baydoun.html#a60280c802ffd817104b59933b0c7d678',1,'implementations::Baydoun']]]
 ];

@@ -32,8 +32,7 @@ var NAVTREE =
       [ "Пространства имен", "namespaces.html", "namespaces_dup" ],
       [ "Члены пространств имен", "namespacemembers.html", [
         [ "Указатель", "namespacemembers.html", null ],
-        [ "Функции", "namespacemembers_func.html", null ],
-        [ "Переменные", "namespacemembers_vars.html", null ]
+        [ "Функции", "namespacemembers_func.html", null ]
       ] ]
     ] ],
     [ "Классы", "annotated.html", [
