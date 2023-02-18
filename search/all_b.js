@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['one27_0',['one27',['../classimplementations_1_1Baydoun.html#ac8f3b621cef3f7bce0807687c21cf9bb',1,'implementations::Baydoun']]],
-  ['onethree_1',['onethree',['../classimplementations_1_1Baydoun.html#a2d786f76eab9cfa46468be0048e72ed6',1,'implementations::Baydoun::onethree()'],['../classimplementations_1_1Vieta.html#aa8c5170b4a79b984f290b1f2241ca821',1,'implementations::Vieta::onethree()']]],
+  ['one27_0',['one27',['../classimplementations_1_1Baydoun.html#a691c8d8519a61df441430b3eb06289d8',1,'implementations::Baydoun']]],
+  ['onethree_1',['onethree',['../classimplementations_1_1Baydoun.html#aee4ff043b188536e437fdce10ce6492a',1,'implementations::Baydoun::onethree()'],['../classimplementations_1_1Vieta.html#ac2b92e19d5afbe0e4166a4fecbdc9aeb',1,'implementations::Vieta::onethree()']]],
   ['operator_28_29_2',['operator()',['../classimplementations_1_1Baydoun.html#a1b5c4e15497543983ea668b05a09a4c9',1,'implementations::Baydoun::operator()(number a, number b, number c, number d, vector&lt; complex&lt; number &gt; &gt; &amp;roots)'],['../classimplementations_1_1Baydoun.html#a07d65f2e7dafb384568ba46235782a3e',1,'implementations::Baydoun::operator()(vector&lt; number &gt; &amp;inp, std::vector&lt; complex&lt; number &gt; &gt; &amp;roots, bool reverse=false)'],['../classimplementations_1_1Vieta.html#a6195e3ada143f65077e9ea84d0a88b56',1,'implementations::Vieta::operator()(number a, number b, number c, number d, vector&lt; complex&lt; number &gt; &gt; &amp;roots)'],['../classimplementations_1_1Vieta.html#a55bcebd18e0bf0410f47313f0e4a63b3',1,'implementations::Vieta::operator()(vector&lt; number &gt; &amp;inp, std::vector&lt; complex&lt; number &gt; &gt; &amp;roots, bool reverse=false)']]]
 ];
