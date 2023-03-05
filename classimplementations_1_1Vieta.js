@@ -5,5 +5,5 @@ var classimplementations_1_1Vieta =
     [ "Degenerate", "classimplementations_1_1Vieta.html#a8f2d4e5bddcc7c3b167f79528407bb41", null ],
     [ "operator()", "classimplementations_1_1Vieta.html#a6195e3ada143f65077e9ea84d0a88b56", null ],
     [ "operator()", "classimplementations_1_1Vieta.html#a55bcebd18e0bf0410f47313f0e4a63b3", null ],
-    [ "Usual", "classimplementations_1_1Vieta.html#a6596be14b82df798033ef948b054de1b", null ]
+    [ "Usual", "classimplementations_1_1Vieta.html#acacf381ca001f7260bfc252a635ff21b", null ]
 ];
